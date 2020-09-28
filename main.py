@@ -39,7 +39,7 @@ for i in range(0, 20000):
                  + ',' + str(random.choice(range(1, 30))).zfill(2) + '-' + str(random.choice(range(1, 12))).zfill(2)
                  + '-' + str(random.choice(range(1950, 2019))))
 
-fw = open("out/data_" + str(file_size_mb) + "mb.csv", "w")
+fw = open("data_" + str(file_size_mb) + "mb.csv", "w")
 for it in range(0, file_size_mb):
     fw.write('\n'.join(lines))
 fw.close()
